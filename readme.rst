@@ -6,13 +6,13 @@ Simple (block) schemas
 ----------------------
 
 .. image:: results/schema.png
-    :scale: 20%
+   :scale: 20 %
 
 Contour plots
 -------------
 
 .. image:: results/contour-plot.png
-    :scale: 10%
+   :scale: 10 %
 
 Markov Chain
 ------------
