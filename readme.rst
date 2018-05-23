@@ -5,8 +5,9 @@ TikZ Collection
 Simple (block) schemas
 ----------------------
 
-.. image:: results/schema.png
-   :width: 400px
+.. raw:: html
+
+    <img src="results/schema.png" width="400px">
 
 Contour plots
 -------------
