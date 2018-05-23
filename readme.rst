@@ -12,10 +12,14 @@ Simple (block) schemas
 Contour plots
 -------------
 
-.. image:: results/contour-plot.png
-   :width: 400px
+
+.. raw:: html
+
+    <img src="results/contour-plot.png" width="400px">
 
 Markov Chain
 ------------
 
-.. image:: results/markov-chain.png
+.. raw:: html
+
+    <img src="results/markov-chain.png" width="400px">
