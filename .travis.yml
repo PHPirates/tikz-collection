@@ -1,0 +1,31 @@
+before_install:
+- sudo apt-get install texlive-binaries
+install:
+- export PATH="$HOME/miniconda/bin:$PATH"
+- if ! command -v conda > /dev/null; then wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+  -O miniconda.sh; bash miniconda.sh -b -p $HOME/miniconda -u; conda config --add
+  channels conda-forge; conda config --set always_yes yes; conda update --all; conda
+  install tectonic; fi
+- conda info -a
+cache:
+  directories:
+  - "$HOME/miniconda"
+  - "$HOME/.cache/Tectonic"
+script:
+- cd ./src/
+- tectonic ./schema.tex --print
+- tectonic ./markov-chain.tex --print
+- tectonic ./contour-plot.tex --print
+- cd ../
+deploy:
+  provider: releases
+  api_key:
+    secure: lkgg2JYV7ETN8pBzNJmWXe7iZB+Xn7xUwaTq6HnI8q8cCr7TtMmSlImo/2bhN1FX0/R2vBfv2K97xKROKkHEfvoaq18m28GkWZGKwMIaCsmtYMqKU1tAMBo/j6JP/sd2sQQ5zfJZ+CKkLSs0zz7ORDe+DDCvsWro2oeXOWQIUzaIDKLSI7qmBMjMMwCHfnbTeFSsmtFD54fj5ynIwSmh9G5n6XCVHbhAeId61Exd++Yc+u5Gzxg8noq2tBaR3WziNy6p1+1Rl0s5OzjoAcvVRQuYF/j/qcRU5sjPZJu+klPjAcd/0UdXW1GHWIX0ykYQ6/6cdngmMCUWgm6ocu6y/Sg0JbB88xoPbNRrAgKxkTHFKIhRX+y5+cikwPPVokblWj96EmWr3vjpjb21wPoMw7JO0nOJw8yCt4lUNegvdEE08xpefYi5wm0WQpFHblgji5BHIRfuq87Y9h0u3T9sS3hqS5dB/uUy9/H/LQ9Kf0X+CM+fOqP8Kftfb6Yzu4OGuDCh25fe2fBn2ZdmkKN30LX4zkmAczUTczt6WDGS1WSpD64OoF1R8jGI8dIgWEJpTIg0Y2c5XTefqlELVl90EVgCHSeLcMW9aE0IxG4gLpW8GYM72RiACkzSE1htLLQE7gRn4FMOsw6MlGOXSNqFFfKrO3aFVi8VcW5SybWfMt4=
+  file:
+  - ./src/schema.pdf
+  - ./src/markov-chain.pdf
+  - ./src/contour-plot.pdf
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
