@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.com/PHPirates/tikz-collection.svg?branch=master
+    :target: https://travis-ci.com/PHPirates/tikz-collection
+
 ---------------
 TikZ Collection
 ---------------
