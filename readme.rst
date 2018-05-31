@@ -33,7 +33,7 @@ How to include TikZ pictures
 
 Put in a file ``stuff.tikz``
 
-.. codeblock:: tex
+.. code:: tex
 
     \begin{tikzpicture}
         ...
@@ -41,7 +41,7 @@ Put in a file ``stuff.tikz``
     
 and in your main LaTeX file:
 
-.. codeblock:: tex
+.. code:: tex
 
     \begin{figure}
         \input{stuff.tikz}
