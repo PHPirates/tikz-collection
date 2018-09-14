@@ -20,6 +20,14 @@ Contour plots
 
     <img src="results/contour-plot.png" width="400px">
 
+
+Unit 'circles'
+--------------
+
+.. raw:: html
+
+    <img src="results/unit-spheres.png" width="400px">
+
 Markov Chain
 ------------
 
