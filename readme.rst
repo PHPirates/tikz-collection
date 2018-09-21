@@ -34,6 +34,13 @@ Markov Chain
 .. raw:: html
 
     <img src="results/markov-chain.png" width="400px">
+
+Tree
+------------
+
+.. raw:: html
+
+    <img src="results/tree.png" width="400px">
     
 ----------------------------
 How to include TikZ pictures

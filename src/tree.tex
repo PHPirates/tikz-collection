@@ -1,0 +1,26 @@
+%%
+%% Author: Thomas Schouten
+%% 21-9-2018
+%%
+
+\documentclass[border=5mm, tikz]{standalone}
+
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+\begin{document}
+
+
+    \begin{tikzpicture}
+        \Tree
+        [.root
+            child1
+            [.parent
+                child2
+                child3
+            ]
+            child4
+        ]
+    \end{tikzpicture}
+
+\end{document}
