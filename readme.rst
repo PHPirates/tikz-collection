@@ -35,6 +35,13 @@ Markov Chain
 
     <img src="results/markov-chain.png" width="400px">
 
+Graphs
+------
+
+.. raw:: html
+
+    <img src="results/graph.png" width="400px">
+
 Tree
 ------------
 
