@@ -53,7 +53,7 @@ Tree
 How to include TikZ pictures
 ----------------------------
 
-Put in a file ``stuff.tikz``
+Include the package ``tikzscale``, then put in a file ``stuff.tikz``
 
 .. code:: tex
 
