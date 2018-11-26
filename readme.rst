@@ -48,6 +48,13 @@ Tree
 .. raw:: html
 
     <img src="results/tree.png" width="400px">
+
+Combinatorial Graphs
+------------
+
+.. raw:: html
+
+    <img src="results/combinatorial.png" width="400px">
     
 ----------------------------
 How to include TikZ pictures

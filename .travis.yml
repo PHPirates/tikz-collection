@@ -30,6 +30,9 @@ script:
 - tectonic ./schema.tex --print
 - tectonic ./markov-chain.tex --print
 - tectonic ./contour-plot.tex --print
+- tectonic ./combinatorial.tex --print
+- tectonic ./tree.tex --print
+- tectonic ./unit-spheres.tex --print
 - cd ../
 deploy:
   provider: releases
@@ -39,6 +42,9 @@ deploy:
   - ./src/schema.pdf
   - ./src/markov-chain.pdf
   - ./src/contour-plot.pdf
+  - ./src/combinatorial.pdf
+  - ./src/tree.pdf
+  - ./src/unit-spheres.pdf
   skip_cleanup: true
   on:
     tags: true
