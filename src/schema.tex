@@ -12,44 +12,44 @@
 
 
 % Default arrow length: (length right, length up)
-\newcommand{\standardlength}{1,0}
+\newcommand{\stdlength}{1,0}
 
 % Default arrowhead.
-\newcommand{\standardarrow}{-{Latex[length=2mm,width=2mm]}}
+\newcommand{\stdarrow}{-{Latex[length=2mm,width=2mm]}}
 
 % Document
 \begin{document}
 
     \begin{tikzpicture}
         \node[left] (one) { One };
-        \draw[\standardarrow] (one.east) -- ++(\standardlength)
+        \draw[\stdarrow] (one.east) -- ++(\stdlength)
         node[right] (two) { Twoooooooooooooo };
-        \draw[\standardarrow] (two.east) -- ++(\standardlength)
+        \draw[\stdarrow] (two.east) -- ++(\stdlength)
         node[right] (three) { Three };
-        \draw[\standardarrow] (three.east) -- ++(\standardlength)
+        \draw[\stdarrow] (three.east) -- ++(\stdlength)
         node[right] (four) { Four };
     \end{tikzpicture}
 
     \begin{tikzpicture}
         \node[left] (one) { One };
-        \draw[\standardarrow] (one.east) -- ++(1.5,0)  node[above, pos=0.5] { asdf }
+        \draw[\stdarrow] (one.east) -- ++(1.5,0)  node[above, pos=0.5] { asdf }
         node[right] (two) { Two };
-        \draw[\standardarrow] (two.east) -- ++(\standardlength)
+        \draw[\stdarrow] (two.east) -- ++(\stdlength)
         node[right] (three) { Three };
-        \draw[\standardarrow] (three.east) -- ++(\standardlength)
+        \draw[\stdarrow] (three.east) -- ++(\stdlength)
         node[right] (four) { Four };
     \end{tikzpicture}
 
-    \begin{tikzpicture}
+    \begin{tikzpicture}[every node/.style={shape=rectangle, draw}]
         \node (one) { UpOne };
         \node[below of=one] (two) { DownOne };
-        \draw[\standardarrow] (two.east) -- ++(\standardlength)
+        \draw[\stdarrow] (two.east) -- ++(\stdlength)
         node[right] (three) { Twoooo };
-        \draw[\standardarrow] (one) -- (three);
-        \draw[\standardarrow] (three.east) -- ++(\standardlength)
+        \draw[\stdarrow] (one) -- (three);
+        \draw[\stdarrow] (three.east) -- ++(\stdlength)
         node[right] (four) { Threeeeeee };
-        \draw[\standardarrow] (four.east) to [bend left=30] ++(\standardlength)
-        node[right] (five) { Four };
+        \draw[\stdarrow] (four.south east) to [bend left=30] ++(\stdlength)
+        node[below right] (five) { Four };
     \end{tikzpicture}
 
 \end{document}

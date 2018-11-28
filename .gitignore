@@ -15,3 +15,5 @@ src/*.ind
 # JabRef files
 src/*.bak
 src/*.sav
+
+src/texliveonfly.py
