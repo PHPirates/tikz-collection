@@ -28,6 +28,13 @@ Unit 'circles'
 
     <img src="results/unit-spheres.png" width="400px">
 
+Drawing points on a circle
+--------------------------
+
+.. raw:: html
+
+    <img src="results/points.circe.PNG" width="400px">
+
 Markov Chain
 ------------
 
