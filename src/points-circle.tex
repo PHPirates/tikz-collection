@@ -1,0 +1,15 @@
+\documentclass{standalone}
+% Packages
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+    \begin{tikzpicture}
+        \newcommand\radius{2}
+        \draw[line width=1pt] (0,0) circle (\radius);
+
+        \foreach \x in {15, 45, 200, 265}{%
+        \draw[fill] ({\radius*cos(\x)}, {\radius*sin(\x)}) circle (2pt);
+        }
+    \end{tikzpicture}
+\end{document}
