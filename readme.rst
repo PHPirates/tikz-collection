@@ -33,7 +33,7 @@ Drawing points on a circle
 
 .. raw:: html
 
-    <img src="results/points.circe.PNG" width="400px">
+    <img src="results/points-circle.PNG" width="400px">
 
 Markov Chain
 ------------
