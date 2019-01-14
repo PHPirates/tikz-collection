@@ -20,13 +20,14 @@
         % Nodes.
         \node[circ] (0) {0};
         \node[circ, right = of 0] (1) {1};
+        \node[circ, right = of 1] (2) {2};
 
         % Undirected edges.
         \foreach \i/\j in {0/1}
         \draw (\i) -- (\j);
 
         % Directed edges.
-        \foreach \i/\j in {1/0}
+        \foreach \i/\j in {1/0, 1/2, 2/1}
         \draw[arrow] (\i) to[bend left] (\j);
 
         % Labeled directed edges.
